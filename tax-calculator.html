@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator - Zenith Financial Advisors</title>
+  <link rel="stylesheet" href="styles/tax-calculator.css">
+</head>
+<body>
+  <!-- Include Header -->
+  <header class="header">
+    <div class="container flex justify-between items-center">
+        <div class="logo">ZENITH FINANCIAL ADVISORS</div>
+      <div class="cta-buttons">
+        <a href="client-area.html" class="btn btn-outline">CLIENT AREA</a>
+        <a href="contact.html" class="btn btn-primary">CONTACT US</a>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="menu-item">Home</a>
+      <a href="services.html" class="menu-item">Services</a>
+      <a href="about.html" class="menu-item">About Us</a>
+      <a href="faqs.html" class="menu-item">FAQs</a>
+      <a href="tax-calculator.html" class="menu-item">Tax Calculator</a>
+    </nav>
+  </header>
+
+  <main class="tax-calculator-page">
+    <section class="intro">
+      <h1>Tax Calculator</h1>
+      <p>Calculate your taxes with ease. Select your country to get started.</p>
+    </section>
+
+    <section class="calculator-section">
+      <div class="calculator-container">
+        <h2>US Tax Calculator</h2>
+        <form id="us-tax-form" class="tax-form">
+          <div class="form-group">
+            <label for="us-income">Annual Income ($)</label>
+            <input type="number" id="us-income" name="us-income" required>
+          </div>
+          <div class="form-group">
+            <label for="us-status">Filing Status</label>
+            <select id="us-status" name="us-status" required>
+              <option value="single">Single</option>
+              <option value="married">Married Filing Jointly</option>
+              <option value="head">Head of Household</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="us-deductions">Deductions ($)</label>
+            <input type="number" id="us-deductions" name="us-deductions">
+          </div>
+          <button type="submit" class="btn btn-primary">Calculate</button>
+          <div id="us-result" class="result"></div>
+        </form>
+      </div>
+      
+      <div class="calculator-container">
+        <h2>Canada Tax Calculator</h2>
+        <form id="canada-tax-form" class="tax-form">
+          <div class="form-group">
+            <label for="canada-income">Annual Income (CAD)</label>
+            <input type="number" id="canada-income" name="canada-income" required>
+          </div>
+          <div class="form-group">
+            <label for="canada-status">Filing Status</label>
+            <select id="canada-status" name="canada-status" required>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="head">Head of Household</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="canada-deductions">Deductions (CAD)</label>
+            <input type="number" id="canada-deductions" name="canada-deductions">
+          </div>
+          <button type="submit" class="btn btn-primary">Calculate</button>
+          <div id="canada-result" class="result"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h3>Zenith Financial Advisors</h3>
+        <p>123 Financial Road, Finance City, FC 45678</p>
+        <p>Email: contact@zenithfinancial.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/tax-calculator.js"></script>
+</body>
+</html>
