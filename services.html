@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <div class="container flex justify-between items-center">
-      <div class="logo">ZENITH FINANCIAL ADVISORS</div>
+      <img src="images/logo.png" alt="Zenith Financial Advisors Logo" class="logo">
       <div class="cta-buttons">
         <a href="client-area.html" class="btn btn-outline">CLIENT AREA</a>
         <a href="contact.html" class="btn btn-primary">CONTACT US</a>
@@ -23,22 +23,65 @@
       <a href="tax-calculator.html" class="menu-item">Tax Calculator</a>
     </nav>
   </header>
+
   <main class="services-page">
-    <section class="service-intro">
+    <section class="intro">
       <h1>Our Services</h1>
-      <p>We offer a range of financial advisory services to meet your needs.</p>
+      <p>At Zenith Financial Advisors, we offer a comprehensive range of financial services tailored to meet your needs.</p>
     </section>
-    <div class="services-list">
+
+    <section class="services">
       <div class="service-item">
-        <h2>Services for Individuals</h2>
-        <p>Working together with you, we will provide personalized tax compliance and advisory services that cover your individual Canadian and US Expatriate tax needs. No matter where you work or relocate globally, we can assist you with your complex US and Canadian tax obligations.</p>
+        <div class="service-image-container">
+          <img src="images/service-individuals.jpg" alt="Service for Individuals" class="service-image">
+        </div>
+        <div class="service-content">
+          <h2>Services for Individuals</h2>
+          <p>We provide personalized tax compliance and advisory services for individuals. Our services cover Canadian and US Expatriate tax needs, ensuring you are compliant no matter where you relocate globally.</p>
+          <ul>
+            <li>Tax Compliance</li>
+            <li>Tax Advisory</li>
+            <li>Expatriate Tax Services</li>
+            <li>Financial Planning</li>
+          </ul>
+          <a href="#learn-more" class="btn btn-learn-more">Learn More</a>
+        </div>
       </div>
       <div class="service-item">
-        <h2>Services for Corporations</h2>
-        <p>Corporate tax services to meet the needs of Canadian and foreign-based corporations of all sizes, in various industries. From Start-up Canadian corporate tax compliance to corporate reorganizations, structure planning, and transactional tax consulting, we offer a complete solution for all of your business tax needs.</p>
+        <div class="service-image-container">
+          <img src="images/service-corporate.jpg" alt="Service for Corporations" class="service-image">
+        </div>
+        <div class="service-content">
+          <h2>Services for Corporations</h2>
+          <p>We offer comprehensive corporate tax services for Canadian and foreign-based corporations of all sizes. Our services include corporate tax compliance, reorganizations, structure planning, and transactional tax consulting.</p>
+          <ul>
+            <li>Corporate Tax Compliance</li>
+            <li>Corporate Reorganizations</li>
+            <li>Structure Planning</li>
+            <li>Transactional Tax Consulting</li>
+          </ul>
+          <a href="#learn-more" class="btn btn-learn-more">Learn More</a>
+        </div>
       </div>
-    </div>
+      <div class="service-item">
+        <div class="service-image-container">
+          <img src="images/service-advisory.jpg" alt="Financial Advisory" class="service-image">
+        </div>
+        <div class="service-content">
+          <h2>Financial Advisory</h2>
+          <p>Our expert financial advisory services help you make informed decisions about your investments, retirement planning, and risk management. We provide strategic advice to help you achieve your financial goals.</p>
+          <ul>
+            <li>Investment Advice</li>
+            <li>Retirement Planning</li>
+            <li>Risk Management</li>
+            <li>Wealth Management</li>
+          </ul>
+          <a href="#learn-more" class="btn btn-learn-more">Learn More</a>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -49,5 +92,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="scripts/services.js"></script>
 </body>
 </html>
