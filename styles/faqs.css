@@ -1,4 +1,4 @@
-/* CSS for faqs.html */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -189,5 +189,29 @@ body {
   
   .footer-content p {
     margin: 5px 0;
+  }
+  
+  /* Animations */
+  .faq-question span, .faq-subquestion span {
+    transition: transform 0.3s;
+  }
+  
+  .faq-question span.rotate, .faq-subquestion span.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer, .faq-subanswer {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   

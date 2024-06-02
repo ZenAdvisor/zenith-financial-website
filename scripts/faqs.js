@@ -1,42 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
   const faqQuestions = document.querySelectorAll(".faq-question");
-  const faqSubquestions = document.querySelectorAll(".faq-subquestion");
 
   faqQuestions.forEach((question) => {
     question.addEventListener("click", () => {
-      const answer = question.nextElementSibling;
+      question.classList.toggle("active");
+      const faqAnswer = question.nextElementSibling;
 
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-        question.innerHTML = question.innerHTML.replace("&#9656;", "&#9662;");
+      if (faqAnswer.style.display === "block") {
+        faqAnswer.style.display = "none";
       } else {
-        answer.style.display = "block";
-        question.innerHTML = question.innerHTML.replace("&#9662;", "&#9656;");
+        faqAnswer.style.display = "block";
       }
 
-      question.classList.toggle("active");
+      // Rotate arrow icon
+      const icon = question.querySelector("span");
+      if (icon) {
+        icon.classList.toggle("rotate");
+      }
     });
   });
 
-  faqSubquestions.forEach((subquestion) => {
-    subquestion.addEventListener("click", () => {
-      const subanswer = subquestion.nextElementSibling;
+  const faqSubQuestions = document.querySelectorAll(".faq-subquestion");
 
-      if (subanswer.style.display === "block") {
-        subanswer.style.display = "none";
-        subquestion.innerHTML = subquestion.innerHTML.replace(
-          "&#9662;",
-          "&#9656;"
-        );
+  faqSubQuestions.forEach((subquestion) => {
+    subquestion.addEventListener("click", () => {
+      subquestion.classList.toggle("active");
+      const faqSubAnswer = subquestion.nextElementSibling;
+
+      if (faqSubAnswer.style.display === "block") {
+        faqSubAnswer.style.display = "none";
       } else {
-        subanswer.style.display = "block";
-        subquestion.innerHTML = subquestion.innerHTML.replace(
-          "&#9656;",
-          "&#9662;"
-        );
+        faqSubAnswer.style.display = "block";
       }
 
-      subquestion.classList.toggle("active");
+      // Rotate arrow icon
+      const icon = subquestion.querySelector("span");
+      if (icon) {
+        icon.classList.toggle("rotate");
+      }
     });
   });
 });
