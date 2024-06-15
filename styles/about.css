@@ -138,6 +138,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Footer Styles */
 .footer {
     background-color: #264653;
     color: white;
@@ -152,6 +153,7 @@ body {
 }
 
 .footer-content {
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -163,6 +165,7 @@ body {
 .footer-content p {
     margin: 5px 0;
 }
+
 
 /* Animations */
 @keyframes fadeInUp {

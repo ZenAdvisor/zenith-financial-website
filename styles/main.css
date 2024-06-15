@@ -255,31 +255,34 @@ body {
     background-color: #21867a;
   }
   
-  .footer {
-    background-color: #264653;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .footer-content {
-    margin-bottom: 20px;
-  }
-  
-  .footer-content h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  
-  .footer-content p {
-    margin: 5px 0;
-  }
+ /* Footer Styles */
+.footer {
+  background-color: #264653;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
   
   /* For animations */
   .menu a, .btn {
