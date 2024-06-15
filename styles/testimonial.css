@@ -1,0 +1,38 @@
+/* Testimonial Styles */
+.testimonial-section {
+  background: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+blockquote {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: #555;
+}

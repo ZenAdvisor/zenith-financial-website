@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zenith Financial Advisors</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/testimonial.css">
 </head>
 <body>
   <header class="header">
@@ -28,8 +29,8 @@
     <img src="images/bannerImage.jpeg" alt="Banner" class="banner-image">
     <div class="banner-overlay"></div>
     <div class="banner-content">
-      <h1 class="animated-text">International Tax. Simplified.</h1>
-      <p>We take the complication out of tax.</p>
+      <h1 class="animated-text">Global Tax Optimization - <span class="smaller-text">"Making Taxes Less Taxing"</span></h1>
+      <p>Master global taxes effortlessly with our intuitive platform. Simplifying complexity, maximizing opportunities.</p>
       <a href="contact.html" class="btn btn-large btn-catchy">GET STARTED NOW</a>
     </div>
   </main>
@@ -63,6 +64,23 @@
     <p>Tax and Financial Updates that Matter to You</p>
   </section>
 
+  <div id="testimonial-section"></div>
+    <script src="scripts/testimonial.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('partials/testimonial.html')
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok.');
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('testimonial-section').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading testimonial:', error));
+        });
+    </script>
+
   <!-- Footer Section -->
   <footer class="footer">
     <div class="container">
@@ -74,6 +92,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="scripts/main.js"></script>
 </body>
