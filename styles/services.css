@@ -98,7 +98,7 @@ body {
 }
 
 .service-item {
-  background: white;
+  background: #f0fdf4; /* Light green background */
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -110,6 +110,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  padding: 20px; /* Add padding inside the container */
 }
 
 .service-item:hover {
@@ -132,8 +133,8 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  text-align: left;
+  align-items: center; /* Center-align items */
+  text-align: center; /* Center-align text */
   height: 100%; /* Ensure content fills the height */
 }
 
@@ -141,21 +142,26 @@ body {
   color: #2a9d8f;
   margin-bottom: 10px;
   flex: 0 0 auto; /* Prevent stretching */
+  text-align: center; /* Center align the heading */
+  width: 100%; /* Make heading take full width */
 }
 
 .service-content p {
   color: #264653;
   margin-bottom: 20px;
+  text-align: left; /* Align paragraphs to the left */
+  min-height: 250px; /* Ensure a consistent minimum height */
 }
 
 .service-content ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 40px; /* Increased padding for better alignment */
   color: #264653;
-  text-align: left; /* Ensure lists are aligned left for readability */
   animation: fadeIn 2s ease-in-out; /* Apply animation */
   margin-top: 20px; /* Add margin to separate from paragraphs */
   font-size: 18px; /* Increase font size */
+  width: 100%; /* Make the list take full width */
+  text-align: left; /* Align text to the left */
 }
 
 .service-content ul li {
@@ -164,10 +170,20 @@ body {
   margin: 10px 0; /* Increase margin for better spacing */
   padding: 10px; /* Increase padding for better spacing */
   border-radius: 5px;
-  background: #f0f0f0;
+  background: #ffffff; /* White background for list items */
   transition: background 0.3s, transform 0.3s;
-  text-align: left; /* Align text to the left */
   font-size: 20px; /* Increase font size */
+  display: flex;
+  align-items: center; /* Center-align items vertically */
+}
+
+.service-content ul li::before {
+  content: "•";
+  color: #2a9d8f;
+  font-size: 24px; /* Make the bullet larger */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .service-content ul li:hover {
